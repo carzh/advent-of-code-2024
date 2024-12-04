@@ -10,7 +10,7 @@
 // then run the executable
 
 int main(int argc, char* argv[]) {
-    std::string filePath = "inputs/day01a";
+    std::string filePath = "../inputs/day01a";
 
     std::ifstream file(filePath);
 
