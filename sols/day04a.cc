@@ -13,7 +13,7 @@ bool checkGridForChar(std::vector<const char*> lines, std::vector<size_t> lineLe
     if (row > lineLengths.size()) {
         return false;
     }
-    if (!(0 <= row < lines.size()) || !(0 <= col <= lineLengths[row])) {
+    if (row >= lines.size() || col >= lineLengths[row]) {
         // std::cout << "if statement trig" << std::endl;
         // return false bc out of bounds
         return false;
